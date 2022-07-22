@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpo</title>
+</head>
+<body>
+    <header>
+        <h1>Jokenpô</h1>
+    </header>
+    <main>
+        <h2>Vamos jogar!</h2>
+        <p>Escolha Pedra, Papel e Tesoura:</p>
+        <p id="ops"><input type="radio" name="ops" id="rock"  onclick="pedra()">Pedra <input type="radio" name="ops" id="paper" onclick="papel()">Papel <input type="radio" name="ops" id="scisor" onclick="tesoura()">Tesoura </p>
+        <div id="btn"><input type="button" value="Jogar" onclick="jogar()"><br><input type="button" value="Reset" onclick="reset()"></div>
+        <div id="imgs">
+            <img src="imagens/pedra.png" alt="person" id="p1"><img src="imagens/tesoura.png" alt="ia" id="ia">
+        </div>
+        <div id="res">
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
