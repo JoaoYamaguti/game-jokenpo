@@ -16,18 +16,30 @@ function tesoura(){
 
 function jogar(){
     let res = document.getElementById('res')
+    let imgia = document.querySelector('img#ia')
     let p = document.createElement('p')
     p.setAttribute('id', 'res')
-    p.innerHTML = 'JON ... '
+    p.innerHTML = 'JAN... '
     res.appendChild(p)
     setTimeout(() => {
-        p.innerHTML += 'KEN ... '
+        p.innerHTML += 'KEN... '
     }, 1000);
     setTimeout(() => {
-        p.innerHTML +='POH!!!<br>'
+        p.innerHTML +='PON!!!<br>'
         
-        let opia = 0
-
+        let opia = Math.floor(Math.random() * (2 - 0 + 1)) + 0
+        switch (opia) {
+            case 0:
+                imgia.src = 'imagens/pedra.png'
+                break;
+            case 1:
+                imgia.src = 'imagens/papel.png'
+                break;
+            case 2:
+                imgia.src = 'imagens/tesoura.png'
+                break;
+        }
+        imgia.style.display = 'inline'
         if (ops[0].checked){
             switch (opia) {
                 case 0:
@@ -38,7 +50,7 @@ function jogar(){
                     break;
                 case 2:
                     p.innerHTML += 'Voçê Ganhou!'
-                    break
+                    break;
             }
         } else if (ops[1].checked){
             switch (opia) {
@@ -50,7 +62,7 @@ function jogar(){
                     break;
                 case 0:
                     p.innerHTML += 'Voçê Ganhou!'
-                    break
+                    break;
             }
         } else if (ops[2].checked){
             switch (opia) {
@@ -62,9 +74,12 @@ function jogar(){
                     break;
                 case 0:
                     p.innerHTML += 'Voçê Perdeu!'
-                    break
+                    break;
             }
         }
     }, 2000);
-
+    setTimeout(() => {
+        imgia.style.display = 'none'
+        res.innerText = ' '
+    }, 5000);
 }
