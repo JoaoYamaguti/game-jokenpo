@@ -1,5 +1,6 @@
 let ops = document.getElementsByName('ops')
 let imgpl = document.getElementById('p1')
+let clicavel = true
 
 function pedra() {
     imgpl.style.display = 'inline'
@@ -15,6 +16,10 @@ function tesoura(){
 }
 
 function jogar(){
+    if (!clicavel) {
+        return;
+    }
+    clicavel = false
     let res = document.getElementById('res')
     let imgia = document.querySelector('img#ia')
     let p = document.createElement('p')
@@ -81,5 +86,6 @@ function jogar(){
     setTimeout(() => {
         imgia.style.display = 'none'
         res.innerText = ' '
+        clicavel = true
     }, 5000);
 }
