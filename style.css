@@ -14,7 +14,8 @@
 }
 
 body {
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     background-color: var(--cor3);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -53,7 +54,7 @@ main p#ops {
     justify-content: center;
     margin-top: 40px;
     font-weight: bold;
-    font-size: 3.5vw;
+    font-size: 3vw;
 }
 
 p#ops input {
