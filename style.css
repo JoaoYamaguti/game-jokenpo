@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
 :root{
     --cor1: #CCF6FF;
     --cor2: #6BA6B3;
     --cor3: #FFE4CC;
     --cor4: #E6FFE7;
     --cor5: #B3967D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -49,54 +49,60 @@ main p {
     margin-top: 10px; 
     font-size: 1.2em; 
 }
-main p#ops {
+
+#ops {
     display: flex;
     justify-content: center;
+    gap: 5%;
     margin-top: 40px;
+}
+
+#ops > label {
+    width: 150px;
+    background-color: var(--cor2);
+    border-radius: 5px;
+    padding: .5rem;
+    text-align: center;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 1.6rem;
+    color: white;
+}
+#ops label + #ops input:focus {
+    border: 3px orange;
 }
 
-p#ops input {
-    margin: 0px 30px;
+#ops input {
+    display: none;
 }
 
-main p input {
-    margin-right: 10px;
-}
-
-div#btn {
+#btn {
     text-align: center;
     margin-top: 20px;
 }
 
-div#btn input {
+#btn input {
     width: 100px;
     height: 30px;
     margin: 10px 0px;
     background-color: var(--cor1);
     border: 2px solid var(--cor2);
     color: black;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
-div#imgs {
+#imgs {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 200px;
     margin: 30px 0px ;
 }
 
-img#p1 {
-    margin-right: 10%;
-}
-
-img#ia {
+#p1, #ia {
     display: none;
 }
 
-p#res {
+#res {
     margin-top: 30px;
     text-align: center;
-    font-size: 3em;
+    font-size: 2rem;
 }

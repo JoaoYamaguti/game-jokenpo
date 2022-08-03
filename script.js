@@ -3,15 +3,15 @@ let imgpl = document.getElementById('p1')
 let clicavel = true
 
 function pedra() {
-    imgpl.style.display = 'flex'
+    imgpl.style.display = 'inline'
     imgpl.src = "imagens/pedra.png"
 }
 function papel(){
-    imgpl.style.display = 'flex'
+    imgpl.style.display = 'inline'
     imgpl.src = "imagens/papel.png"
 }
 function tesoura(){
-    imgpl.style.display = 'flex'
+    imgpl.style.display = 'inline'
     imgpl.src = "imagens/tesoura.png"
 }
 
@@ -44,7 +44,7 @@ function jogar(){
                 imgia.src = 'imagens/tesoura.png'
                 break;
         }
-        imgia.style.display = 'flex'
+        imgia.style.display = 'inline'
         if (ops[0].checked){
             switch (opia) {
                 case 0:
