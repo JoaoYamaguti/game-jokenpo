@@ -48,37 +48,37 @@ function jogar(){
         if (ops[0].checked){
             switch (opia) {
                 case 0:
-                    p.innerHTML += 'Empatou!'
+                    p.innerHTML += 'DRAW!'
                     break;
                 case 1:
-                    p.innerHTML += 'Voçê Perdeu!'
+                    p.innerHTML += 'YOU LOSE!'
                     break;
                 case 2:
-                    p.innerHTML += 'Voçê Ganhou!'
+                    p.innerHTML += 'YOU WIN!'
                     break;
             }
         } else if (ops[1].checked){
             switch (opia) {
                 case 1:
-                    p.innerHTML += 'Empatou!'
+                    p.innerHTML += 'DRAW!'
                     break;
                 case 2:
-                    p.innerHTML += 'Voçê Perdeu!'
+                    p.innerHTML += 'YOU LOSE!'
                     break;
                 case 0:
-                    p.innerHTML += 'Voçê Ganhou!'
+                    p.innerHTML += 'YOU WIN!'
                     break;
             }
         } else if (ops[2].checked){
             switch (opia) {
                 case 1:
-                    p.innerHTML += 'Voçê Ganhou!'
+                    p.innerHTML += 'YOU WIN!'
                     break;
                 case 2:
-                    p.innerHTML += 'Empatou!'
+                    p.innerHTML += 'DRAW!'
                     break;
                 case 0:
-                    p.innerHTML += 'Voçê Perdeu!'
+                    p.innerHTML += 'YOU LOSE!'
                     break;
             }
         }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Jokenpo</title>
 </head>
 <body>
@@ -12,27 +13,25 @@
         <h1>Jokenpô</h1>
     </header>
     <main>
-        <h2>Vamos jogar!</h2>
-        <p>Escolha Pedra, Papel e Tesoura:</p>
+        <div class="content_title">
+            <h2>Let's play!!!</h2>
+            <p>Choose rock, paper or scissor:</p>
+        </div>
         <form>
             <div id="ops">    
-                <label for="rock">Pedra</label>
+                <label for="rock">ROCK</label>
                 <input type="radio" name="ops" id="rock"  onclick="pedra()">
-                <label for="paper">Papel</label>
+                <label for="paper">PAPER</label>
                 <input type="radio" name="ops" id="paper" onclick="papel()">
-                <label for="scisor">Tesoura</label>
+                <label for="scisor">SCISSOR</label>
                 <input type="radio" name="ops" id="scisor" onclick="tesoura()">
             </div>
-            <div id="btn">
-                <input type="button" value="Jogar" id="btn" onclick="jogar()">
-            </div>
+            <input type="button" value="Play" id="btn" onclick="jogar()">
         </form>
         <div id="imgs">
             <img src="imagens/pedra.png" alt="person" id="p1"><img src="imagens/tesoura.png" alt="ia" id="ia">
         </div>
-        <div id="res">
-
-        </div>
+        <div id="res"></div>
     </main>
 
     <script src="script.js"></script>

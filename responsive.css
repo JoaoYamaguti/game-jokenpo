@@ -1,0 +1,12 @@
+@media(max-width: 560px) {
+    html {
+        font-size: 50%;
+    }
+    #ops {
+        flex-flow: column;
+    }
+
+    #ops label {
+        width: 40%;
+    }
+}
