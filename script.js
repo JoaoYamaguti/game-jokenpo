@@ -15,11 +15,25 @@ function tesoura(){
     imgpl.src = "imagens/tesoura.png"
 }
 
+function choose(ops) {
+    let mark = []
+    ops.forEach(e => {
+        mark.push(e.checked)
+    });
+    return mark.includes(true)
+}
+
 function jogar(){
+    if(!choose(ops)) {
+        alert('Choose a option...')
+        return
+    }
     if (!clicavel) {
-        return;
+        return
     }
     clicavel = false
+
+
     let res = document.getElementById('res')
     let imgia = document.querySelector('img#ia')
     let p = document.createElement('p')
