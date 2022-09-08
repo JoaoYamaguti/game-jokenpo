@@ -137,6 +137,21 @@ form{
     display: none;
 }
 
+#p1 {
+    transform: scaleX(-1);
+
+}
+
+.p1Play{
+    transform: rotate(0.25turn);
+    transition: 0.3s;
+}
+
+.iaPlay{
+    transform: rotate(-0.25turn);
+    transition: 0.3s;
+}
+
 #res {
     grid-area: res;
 

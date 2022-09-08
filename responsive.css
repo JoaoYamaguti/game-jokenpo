@@ -9,4 +9,16 @@
     #ops label {
         width: 40%;
     }
+
+    /* #imgs {
+        flex-flow: column;
+        align-items: center;
+    }
+    #p1 {
+        transform: rotate(0.25turn) scaleX(-1);
+    
+    }
+    #ia {
+        transform: rotate(0.25turn);
+    } */
 }
