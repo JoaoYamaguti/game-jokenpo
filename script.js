@@ -32,15 +32,11 @@ function jogar(){
         return
     }
     clicavel = false
-
-
     let res = document.getElementById('res')
     let imgia = document.querySelector('img#ia')
     let p = document.createElement('p')
-
     let div_p1 = document.querySelector('.p1')
     let div_ia = document.querySelector('.ia')
-
     p.setAttribute('id', 'res')
     p.innerHTML = 'JAN... '
     res.appendChild(p)
@@ -49,7 +45,6 @@ function jogar(){
     }, 1000);
     setTimeout(() => {
         p.innerHTML +='PON!!!<br>'
-        
         let opia = Math.floor(Math.random() * (2 - 0 + 1)) + 0
         switch (opia) {
             case 0:
@@ -100,10 +95,8 @@ function jogar(){
                     break;
             }
         }
-
         div_p1.classList.add('p1Play')
         div_ia.classList.add('iaPlay')
-
     }, 2000);
     setTimeout(() => {
         div_p1.classList.remove('p1Play')
